@@ -1,0 +1,11 @@
+version: '3'
+services:
+  springboot-devcontainer-example:
+    # image: springboot-devcontainer-example:1.0
+    build:  
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    volumes:
+      - /maven:/root/.m2/
